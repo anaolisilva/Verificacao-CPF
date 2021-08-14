@@ -1,3 +1,5 @@
+//Escrito por Ana Oliveira Silva - 14/08/21
+
 function validacao() {
     let cpf = document.getElementById('cpf').value
 
