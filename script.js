@@ -5,19 +5,17 @@ function validacao() {
     let cpf = document.getElementById('cpf').value
 
     let resultValidacao
-    let dv1
-    let dv2
-    let verificadorDv1
-    let verificadorDv2
+    let dv1 
+    let dv2 
+    let verificadorDv1 = -1
+    let verificadorDv2 = -1
 
     if (cpf.length != 11){
         resultValidacao = false
     } else {
 
         let cpfCopia = cpf
-    
-        resultValidacao
-    
+        
         dv2 = cpf % 10
         dv1 = parseInt((cpf % 100)/10)
     
@@ -74,4 +72,10 @@ function validacao() {
     } else {
         document.getElementById('fail').style.display = 'block';
     }
+}
+
+function reset () {
+    document.getElementById('success').style.display = 'none';
+    document.getElementById('fail').style.display = 'none';
+
 }

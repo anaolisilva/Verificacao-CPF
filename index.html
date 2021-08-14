@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validador de CPF</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 <body class="">
 
-    <header class="w3-container w3-teal">
-        <section class="w3-margin ">
+    <header class="w3-teal">
+        <section class="w3-container" style="margin-left: 10%">
             <h1>Validador de CPF</h1>
             <p style="width:50%">Exercício realizado na jornada da Gama Academy em parceria com a Start Tech para treinar funções em JavaScript e seu relacionamento com páginas HTML.</p>
         </section>
     </header>
     <main class="w3-container w3-gray w3-padding-large">
-        <div style="width:50%" class="">
+        <div class="w-30" style="margin-left:10%">
             <label>Digite o CPF aqui:</label>
             <input class="w3-input w3-border-0" id="cpf" type="text">
-            <small>Por favor, insira apenas números</small>
-            <button onclick="validacao()" class="w3-btn w3-teal">Validar</button>
+            <span class="formulario">
+                <small style="margin-top: 1%">Por favor, insira apenas números</small>
+                <button style="margin-top: 2%;" onclick="reset(); validacao()" class="w3-btn w3-teal">Validar</button>
+            </span>
         </div>
 
-        <div>
+        <div class="w-30" style="margin-left:10%; margin-top:2%">
             <div id="success" class="w3-panel w3-green" style="display: none;">
                 <h3>O CPF digitado é válido.</h3>
             </div>
