@@ -1,4 +1,5 @@
 //Escrito por Ana Oliveira Silva - 14/08/21
+//Função feita com conceitos mais lógico-matemáticos.
 
 function validacao() {
     let cpf = document.getElementById('cpf').value
