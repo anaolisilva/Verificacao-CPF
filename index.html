@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body class="">
+
+    <header class="w3-container w3-teal">
+        <section class="w3-margin ">
+            <h1>Validador de CPF</h1>
+            <p style="width:50%">Exercício realizado na jornada da Gama Academy em parceria com a Start Tech para treinar funções em JavaScript e seu relacionamento com páginas HTML.</p>
+        </section>
+    </header>
+    <main class="w3-container w3-gray w3-padding-large">
+        <div style="width:50%" class="">
+            <label>Digite o CPF aqui:</label>
+            <input class="w3-input w3-border-0" id="cpf" type="text">
+            <small>Por favor, insira apenas números</small>
+            <button onclick="validacao()" class="w3-btn w3-teal">Validar</button>
+        </div>
+
+        <div>
+            <div id="success" class="w3-panel w3-green" style="display: none;">
+                <h3>O CPF digitado é válido.</h3>
+            </div>
+
+            <div id="fail" class="w3-panel w3-red" style="display: none;">
+                <h3>O CPF digitado não é válido.</h3>
+            </div>
+
+        </div>
+    </main>
+    
+</body>
+
+<script src="script.js"></script>
+</html>
