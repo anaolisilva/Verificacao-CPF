@@ -1,0 +1,17 @@
+.formulario {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 2%;
+}
+
+main {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
